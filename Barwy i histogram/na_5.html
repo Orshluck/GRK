@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>na 5 </title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+  <script type="text/javascript">function preload() {
+    img = loadImage("https://raw.githubusercontent.com/scikit-image/scikit-image/master/skimage/data/astronaut.png");
+
+  }
+  function setup() {
+    createCanvas(256,256);
+    img.resize(256,256);
+    img.filter('gray');
+    var histogram = new Array(256);
+    histogram.fill(0);
+
+    img.loadPixels();
+    let i = 0
+    for(x=0;x<img.width;x++)
+      for(y=0;y<img.height;y++) {
+          pos=4*(y*img.width+x);
+         r=img.pixels[pos]/255;
+         g=img.pixels[pos+1]/255;
+         b=img.pixels[pos+2]/255
+          cmax = Math.max(r,g,b);
+          cmin = Math.min(r,g,b);
+          v = cmax * 255;
+          histogram[v] += 1;
+
+      }
+
+    background(255)
+    stroke(0)
+
+    max_value = Math.max.apply(null, histogram)
+    for(let i = 0; i< histogram.length;i++){
+        value = histogram[i]/max_value*255*8
+      console.log(value)
+        line(i,256,i,256-value)
+    }
+
+    img.updatePixels();
+    //image(img,0,0)
+
+
+  }
+
+
+
+  </script>
+</head>
+<body>
+<div>
+  Wyświetlanie obrazu
+
+  </div>
+</body>
+</html>

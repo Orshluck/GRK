@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>na 3+</title>
   <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
   <script type="text/javascript">function preload() {
     img = loadImage("https://raw.githubusercontent.com/scikit-image/scikit-image/master/skimage/data/astronaut.png");
@@ -43,8 +43,8 @@
         v = cmax
         l=(cmax+cmin)/2;
 
-        img_v.set(x,y,255*v);
-        //img_v.set(x,y,255*l);
+        //img_v.set(x,y,255*v);
+        img_v.set(x,y,255*l);
 
         img.pixels[pos+3] //to jest wartość dla A
         // img_h.pixels[pos+3] = 255

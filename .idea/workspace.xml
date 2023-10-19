@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00bb0584-7132-4b43-92b1-daa1fb0256ea" name="Changes" comment="zadanie na 4">
-      <change afterPath="$PROJECT_DIR$/Barwy i histogram/na_4_5.html" afterDir="false" />
+    <list default="true" id="00bb0584-7132-4b43-92b1-daa1fb0256ea" name="Changes" comment="finals">
+      <change afterPath="$PROJECT_DIR$/Barwy i histogram.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Barwy i histogram/na_5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barwy i histogram/na_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barwy i histogram/na_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barwy i histogram/na_3_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barwy i histogram/na_3_5.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,7 @@
       <updated>1697703602151</updated>
       <workItem from="1697703603106" duration="157000" />
       <workItem from="1697703800024" duration="26000" />
-      <workItem from="1697703946643" duration="2119000" />
+      <workItem from="1697703946643" duration="4081000" />
     </task>
     <task id="LOCAL-00001" summary="test z web">
       <option name="closed" value="true" />
@@ -93,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697705978040</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="zadanie na 4+5">
+      <option name="closed" value="true" />
+      <created>1697706125546</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697706125546</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +115,8 @@
     <MESSAGE value="zadanie na 3" />
     <MESSAGE value="zadanie na 3+" />
     <MESSAGE value="zadanie na 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="zadanie na 4" />
+    <MESSAGE value="zadanie na 4+5" />
+    <MESSAGE value="finals" />
+    <option name="LAST_COMMIT_MESSAGE" value="finals" />
   </component>
 </project>
