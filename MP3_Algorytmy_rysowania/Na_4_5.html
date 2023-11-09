@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Na 4.5</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<style> body { background-color:#ccc; } </style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+<body oncontextmenu="return false;">
+<script type="text/javascript">
+
+  class Stack{
+    constructor() {
+      this.heap = new Array()
+      this.index = 0
+    }
+    get(){
+      if(this.heap.length != 0){
+        return this.heap.pop()
+      }else{
+        return false
+      }
+    }
+    add(item){
+      this.heap.push(item)
+    }
+
+    isEmpty(){
+      return this.heap.length === 0;
+    }
+  }
+
+  function setup() {
+    createCanvas(512,512);
+    background(255);
+
+  }
+
+
+  var last_x=-1;
+  var last_y=-1;
+  function mouseDragged() {
+    if(mouseButton != LEFT) return;
+    if(last_x>0) {
+      line(last_x,last_y,mouseX,mouseY);
+    }
+    last_x=mouseX;
+    last_y=mouseY
+  }
+  function mouseReleased() {
+    last_x=last_y=-1;
+    if(mouseButton == RIGHT) {
+      loadPixels();
+      flood_fill(mouseX,mouseY);
+      updatePixels();
+    }
+  }
+  function set_pixel(x,y,c) {
+    idx=(y*512+x)*4;
+    pixels[idx]=c;
+    pixels[idx+1]=c;
+    pixels[idx+2]=c;
+    pixels[idx+3]=255;
+  }
+  function get_pixel(x,y) {
+    idx=(y*512+x)*4;
+    return pixels[idx];
+  }
+
+  function pixelIsWhite(x,y){
+    idx=(y*512+x)*4;
+    if (pixels[idx] == 255 && pixels[idx+1] == 255 && pixels[idx+2] == 255){
+      return true
+    }
+    else
+      return false
+
+  }
+  //właściwa funkcja do wypełniania
+  function flood_fill(x,y) {
+
+    MAX_TIMES = 100_000
+    stack = new Stack()
+    stack.add([x,y])
+
+    while (!stack.isEmpty() && MAX_TIMES > 0){
+      lastPixel = stack.get()
+      MAX_TIMES--
+
+      let x = lastPixel[0]
+      let y = lastPixel[1]
+
+      if(x < 0 || x > 512 || y < 0 || y > 512 ){  //hardcoding :(
+        continue
+      }
+
+      let color = get_pixel(x,y)
+      if(! pixelIsWhite(x,y)){
+        continue
+      }
+
+      set_pixel(x,y,0)
+      //add near
+      stack.add([x,y-1])
+      stack.add([x,y+1])
+      stack.add([x-1,y])
+      stack.add([x+1,y])
+    }
+  }
+</script>
+</body>
