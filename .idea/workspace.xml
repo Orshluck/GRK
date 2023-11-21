@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00bb0584-7132-4b43-92b1-daa1fb0256ea" name="Changes" comment="4.5 nie działa&#10;funkcja pixelIsWhite zawsze zwraca prawdę">
-      <change afterPath="$PROJECT_DIR$/MP3_Algorytmy_rysowania/Na_4_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MP3_Algorytmy_rysowania/Na_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MP3_Algorytmy_rysowania/copy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2WyT19RSC1V250J8TO18Y5U4Al6" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -61,6 +65,7 @@
       <workItem from="1697703800024" duration="26000" />
       <workItem from="1697703946643" duration="4081000" />
       <workItem from="1699521565781" duration="5050000" />
+      <workItem from="1700553937941" duration="2989000" />
     </task>
     <task id="LOCAL-00001" summary="test z web">
       <option name="closed" value="true" />
